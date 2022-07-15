@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line] 100px;
+    grid-template-rows: repeat(4, 100px [sexy-line]);
+}
+
+.header {
+    background-color: aqua;
+    grid-column: first-line /  fifth-line
+}
+
+.content {
+    background-color: rgb(0, 181, 70);
+    grid-column: 1 / 4;
+    grid-row: sexy-line 1 / sexy-line 3;
+}
+
+.nav {
+    background-color: rgb(225, 194, 16);
+    grid-row: sexy-line 1 / span 2;
+}
+
+.footer {
+    background-color: rgb(220, 0, 190);
+    grid-column: span 4;
+}

@@ -1,0 +1,15 @@
+.father{
+    display: grid;
+    /* columns 너비 */
+    grid-template-columns: 250px 250px 250px;
+    /* rows 너비 */
+    grid-template-rows: 100px 200px 300px;
+    gap: 10px;  /* grid 사이의 간격 */
+}
+
+.child{
+     background-color: peru;
+     color: white;
+     font-size: 50px;
+     text-align: center;
+}

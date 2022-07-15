@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+}
+
+.header {
+    background-color: aqua;
+    grid-column: span 4
+}
+
+.content {
+    background-color: rgb(0, 181, 70);
+    grid-column: 1 / 4;
+    grid-row: span 2;
+}
+
+.nav {
+    background-color: rgb(225, 194, 16);
+    grid-row: span 2;
+}
+
+.footer {
+    background-color: rgb(220, 0, 190);
+    grid-column: span 4;
+}
