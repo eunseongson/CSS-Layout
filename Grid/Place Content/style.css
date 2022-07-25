@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.grid {
+    background-color: gray;
+    display: grid;
+    gap: 5px;
+    height: 250vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    justify-content: center;    /*가로 정렬*/
+    align-content: center;      /*세로 정렬*/
+    place-content: end end;   /*세로 가로 정렬*/
+}
+
+.header {
+    background-color: aqua;
+}
+
+.content {
+    background-color: rgb(0, 181, 70);
+}
+
+.nav {
+    background-color: rgb(225, 194, 16);
+}
+
+.footer {
+    background-color: rgb(220, 0, 190);
+}
